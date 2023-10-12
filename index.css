@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+}
+.navbar{
+    display: flex;
+}
+.navbar li a{
+    text-decoration: none;
+    padding: 10px;
+    color: wheat;
+    letter-spacing: 2px;
+}
+.navbar li a:hover{
+    background-color: aliceblue;
+    color: black;
+}
+.navbar li{
+    list-style: none;
+}
+.icon i{
+    color: black;
+    background-color: aliceblue;
+    border-radius: 50%;
+    padding: 5px;
+    margin-left: 5px;
+
+}
+.icon i:hover{
+    background-color: transparent;
+    color: white;
+    border: 1px solid aliceblue;
+}
+.icon{
+    margin-right: 5rem;
+}
+.logo{
+    list-style: none;
+    text-decoration: none;
+    color: rgb(5, 168, 5);
+    letter-spacing: 2px;
+    font-weight: 200;
+}
+#menu-icon{
+    display: block;
+}
+.main{
+    margin-top: 10rem;
+    height: 90vh;
+    
+}
+.main-img img{
+    width: 500px;
+    float: right;
+
+}
+.main-con{
+    color: white;
+    margin-left: 12rem;
+
+}
+.main-con h1{
+    font-size: 50px;
+    color: wheat;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+.main-con h2{
+    font-size: 55px;
+    color: antiquewhite;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+.main-con p{
+    color: aliceblue;
+    margin-top:5px;
+}
+.main-con .btn{
+    background-color: transparent;
+    color: wheat;
+    border: 1px solid wheat;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 1rem;
+}
+
+/*product*/
+.product-con{
+    box-shadow: 10px 10px 5px rgb(white);
+    border: 1px solid white;
+    padding: 5px;
+}
+.product-1{
+    display: flex;
+    gap: 4rem;
+    margin-left: 5rem;
+    margin-right: 1rem;
+    margin-top: -4rem;
+    margin-bottom: 6rem;
+  
+}
+.product-con img{
+    padding-left: 5px;
+}
+.product-con1{
+    color: gray;
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 2px;
+    margin-left: 5px;
+
+}
+.product-con2{
+    color: white;
+    display: flex;
+    gap: 3rem;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+.product-con3 {
+    color: white;
+    display: flex;
+    gap: 3rem;
+    margin-left: 5px;
+}
+.product-con3 .product-icon{
+    color: gold;
+}
+.product-btn{
+    background-color: yellow;
+    border: 1px solid yellow;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 1rem;
+    margin-top: 10px;
+}
+@media screen and (min-device-width: 300px) and (max-device-width: 600px){
+    #menu-icon{
+        display: none;
+    }
+    .navbar{
+       position: absolute;
+       top: 5rem;
+       left: 0;
+       right: 0;
+       flex-direction: column;
+       background-color: aliceblue;
+       width: 100%;
+       height: 40vh;
+       padding: 5px;
+       display: none;
+    }
+    .navbar li{
+        padding-top: 1rem;
+        color: black;
+    }
+    .navbar li a{
+        color: black;
+    }
+    .icon{
+        display: flex;
+        margin-left: 5rem;
+    }
+    .logo i{
+        margin-left: 2rem;
+    }
+   /*main*/
+    .main-img img{
+        width: 200px;
+        height: 150px;
+    }
+    .main-con{
+        position: absolute;
+        top: 7rem;
+        left: -9rem;
+        right: 0;
+       
+    }
+    .main-con h1{
+        font-size: 20px;
+    }
+    .main-con h2{
+        font-size: 25px;
+    }
+    /*product*/
+    .product-1{
+        flex-direction: column;
+        margin-top: 1rem;
+        margin-left: 10px;
+        margin-bottom: 4rem;
+    }
+    .product-con img{
+        margin-left: 1.2rem;
+    }
+    .product-con1{
+        color: gray;
+        font-weight: 100;
+        letter-spacing: 2px;
+        margin-left: 5px;
+        margin-bottom: 2px;
+    }
+    .product-con2{
+        font-size: 19px;
+        color: aliceblue;
+        letter-spacing: 2px;
+        margin-left: 5px;
+        margin-bottom: 10px;
+    }
+    .product-con3{
+        margin-left: 5px;
+    }
+    .product-con3 .product-icon{
+        color: gold;
+        
+    }
+    .product-btn{
+        background-color: yellow;
+        color: darkred;
+        padding: 5px;
+        border-radius: 5px;
+        margin-top: 10px;
+        border: 1px solid yellow;
+        margin-left: 1rem;
+
+    }
+
+}
